@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asai-Gen Visual Designer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Asai-Gen v2.1 (Visual Engine)</h1>
+        <div id="chatbox">
+            <!-- Los mensajes del chat aparecerán aquí -->
+            <div class="message ai">
+                <p>{{ initial_message }}</p>
+            </div>
+        </div>
+        <form id="chatform" action="/send" method="post">
+            <input type="text" id="user_input" name="user_input" placeholder="Describe tu idea aquí..." autocomplete="off" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
